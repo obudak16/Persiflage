@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/1c55aca398.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="body-wrapper">
+  <h1 id="title">The Minimalist Entrepreneur</h1>
+
+  <div class="current-rating-wrapper">
+    <h1 class="current-rating-num"></h1>
+    <div class="current-rating fa-2x">
+    </div>
+    <button id="add-review-btn" class="btn">Add review</button>
+  </div>
+
+  <hr class="solid">
+
+  <div>
+    <h1>Reviews</h1>
+    <li>
+      <div id="ratings-list">
+      </div></div>
+    </li>
+  </div>
+  
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+  
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+  
+      <h1>What's your rating?</h1>
+      <form>
+          <h2 class="rating-label">Rating</h2>
+            <div class="star-input fa-2x">
+              <i class="fas fa-star passive_star"></i>
+              <i class="fas fa-star passive_star"></i>
+              <i class="fas fa-star passive_star"></i>
+              <i class="fas fa-star passive_star"></i>
+              <i class="fas fa-star passive_star"></i>
+            </div>
+          <br>
+          <h2>Review</h2>
+          <input type="text" id="text_val" placeholder="Start typing..."><br><br>
+          <input id="submit_btn" class="btn" type="submit" value="Submit review">
+        </form> 
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
